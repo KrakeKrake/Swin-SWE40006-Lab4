@@ -1,0 +1,27 @@
+services:
+  api:
+    container_name: login-api
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../users.sqlite3:/api/users.sqlite3:z
+    image: docker.io/krakekrake/swe40006:backend
+    env_file:
+      - ../.env
+    ports:
+      - 8001:8000
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+.env
+docker
+.venv
+*.sqlite
+.idea
+.dockerignore
